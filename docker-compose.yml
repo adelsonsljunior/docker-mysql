@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+    database:
+        image: meu-sql
+        container_name: meu-banco
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: agenda
